@@ -1,0 +1,721 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    height: 100vh;
+} */
+
+body{
+    /* width: 10vw; */
+    /* height: 100vh; */
+    background: rgba(0,0,0,0.3) url("./fiting.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:inherit;
+    display: grid;
+    place-items: center;
+    
+}
+.loader{
+    position: fixed;
+    margin-top:590px;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+}
+
+.loader img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    /* top: 30%; */
+}
+.loader h1{
+    color: black;
+    margin-top: 150px;
+    font-size: 20px;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+  
+}
+.loader h1 span::before{
+    content: "LOADING";
+    animation: load 2s 0s infinite;
+    padding-left: 2px;
+    color: black;
+    z-index: 100;
+}
+@keyframes load{
+   0%{content: "LOADING.";}
+   60%{content: "LOADING..";}
+   100%{content: "LOADING...";}
+}
+.disappear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.main-cont{
+    position: relative;
+	margin-top: 10px;
+    
+	color: white;
+    width: 75%;
+    min-width: 420px;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+    
+    
+}
+.h{
+    position: absolute;
+    margin: 15px;
+    top:0;
+    width: 100%;
+    height: 60px;
+    letter-spacing:2px;
+    font-family: 'Poppins', sans-serif;
+    padding: 1px 5px;
+    border: 5px outset green;
+    border-radius: 4px;
+    background-color: rgba(38, 110, 38, 0.267);
+    box-shadow: 5px 5px 2px 1px rgba(10, 245, 22, 0.404) ;
+    display: flex;
+    justify-content: center;
+    
+}
+.h h1{
+    position: absolute;
+    color: yellow;
+    text-shadow: 3px 0px 0px red;  
+    font-size: 40px;
+    animation: rot 8s linear infinite;
+    
+}
+
+@keyframes rot{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+ .cont{
+    margin-bottom: 20px;
+    border: 4px outset blue;
+    position: absolute;
+    font-size: 12px;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.1);
+    font-family: 'Poppins', sans-serif;
+    transition: .1s ease-in-out;
+    
+}
+/* .cont:hover{
+    box-shadow: 1.5rem 1rem 0.8rem 0.7rem rgba(249, 251, 252, 0.411) ;
+    transform: translate(-20px,15px);
+} */
+.hose{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.hose h2{
+    display:inline-block;
+    color: rgb(2, 252, 15);
+    letter-spacing: 0.2rem;
+}
+ #hl{
+     position: absolute;
+    color: rgb(244, 248, 0);
+    font-weight: bold;
+    letter-spacing:1px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius:2px;
+    font-size:15px;
+    left: 25%;
+}
+#ht{
+    position: absolute;
+   color: rgb(244, 248, 0);
+   font-weight: bolder;
+   letter-spacing:1px;
+   background-color: rgba(0,0,0,0.6);
+   border-radius: 1px;
+   font-size:15px;
+   left: 69%;
+}
+.hose .hoses{
+    position: absolute;
+    left: 32%;
+    width: 300px;
+    height: 25px;
+    border-radius:3px;
+    padding-left: 5px;
+    font-size:12px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+}
+.hose .hosestype{
+    position: absolute;
+    left: 75%;
+    width: 100px;
+    height: 25px;
+    border-radius: 3px;
+    font-size:12px;
+    padding-left: 5px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+
+    
+}
+option{
+    background-color:lightcoral;
+    color: rgb(133, 4, 4);
+    font-weight: bold;
+    
+}
+.len{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.len h2{
+
+    display:inline-block;
+    color: rgb(2, 252, 15);
+    letter-spacing:2px;
+}
+.len .length{
+    position: absolute;
+    left: 32%;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-size:12px;
+    background-color: rosybrown;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(12, 247, 12);
+}
+.length:hover::-webkit-inner-spin-button{
+    padding: 10px;
+    display: block;
+}
+.fit1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.fit1 h2{
+
+    display:inline-block;
+    color: rgb(2, 252, 15);
+    letter-spacing: 1px;
+}
+.fit1 .fitting1{
+    position: absolute;
+    left: 32%;
+    width: 300px;
+    height: 25px;
+    border-radius:3px;
+    padding-left:10px;
+    font-size:12px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border:1px solid rgb(12, 247, 12);
+}
+.fit1type{
+    position: absolute;
+    left: 75%;
+    width: 220px;
+    height: 25px;
+    border-radius: 3px;
+    font-size:12px;
+    padding-left: 5px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+}
+.fit2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.fit2 h2{
+
+    display:inline-block;
+    color: rgb(2, 252, 15);
+    letter-spacing: 0.2rem;
+}
+.fit2 .fitting2{
+    position: absolute;
+    left: 32%;
+    width: 300px;
+    height: 25px;
+    border-radius:3px;
+    padding-left:10px;
+    font-size:12px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+}
+.fit2 .fit2type{
+    position: absolute;
+    left: 75%;
+    width: 220px;
+    height: 25px;
+    border-radius: 3px;
+    font-size:12px;
+    padding-left: 5px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+}
+.slev{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.slev h2{
+
+    display:inline-block;
+    color: rgb(2, 252, 15);
+    letter-spacing: 1px;
+}
+.slev .sleeve{
+    position: absolute;
+    left: 32%;
+    width: 300px;
+    height: 25px;
+    border-radius:3px;
+    padding-left:10px;
+    font-size:12px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+}
+.slev .slevtype{
+    position: absolute;
+    left: 75%;
+    width: 100px;
+    height: 25px;
+    border-radius: 3px;
+    font-size:12px;
+    padding-left: 5px;
+    background-color: rgba(31, 35, 36, 0.801);
+    color: rgb(12, 247, 12);
+    font-weight: bolder;
+    font-family:sans-serif;
+    cursor: grab;
+    border-color: rgb(12, 247, 12);
+}
+.display{
+    /* margin-top: 0rem; */
+    /* margin-bottom: 1rem; */
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-start;
+    align-content: left;
+    font-size:15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(212, 247, 12);
+}
+
+.c0,.c1,.c2,.c3{
+    position: absolute;
+    color:white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    right: 22%;
+}
+.c0, .tot{
+    position: absolute;
+    top: 0%;
+}
+.c1, .sgst{
+    position: absolute;
+    top: 25%;
+}
+.c2, .cgst{
+    position: absolute;
+    top: 50%;
+}
+.c3, .gtot{
+    position: absolute;
+    top: 75%;
+}
+.tot, .sgst, .cgst, .gtot{
+    font-size: 15px;
+    height: 25px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+    letter-spacing:1px;
+    color: yellow;
+    /* color: #00b894; */
+}
+.gtot{
+    font-size: 18px;
+    background-color: rgba(13, 233, 68, 0.336);
+    border-radius:3px;
+    height: 25px;
+    /* width: auto; */
+    /* right: 13%; */
+}
+.c3{
+    width: auto;
+    color: yellow;
+    background-color: rgba(13, 233, 68, 0.336);
+    border-radius: 3px;
+    font-size: 18px;
+
+}
+.bt{
+    /* margin-top: 1.5rem; */
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    left: 30px;
+    top: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:5px;
+}
+.bt .go{
+    width: 75px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing:1px;
+    color: rgb(5, 5, 5);
+	background: #00b894;
+    cursor: pointer;
+    border: 3px solid yellow;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.go:hover{
+    color: #000;
+	background: #fff;
+    transform: scale(1.15);
+    transition: .3s ease;
+}
+.btro{
+    animation: rotate 1s 0s 1;
+    
+}
+@keyframes rotate{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+@media only screen and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height:130vh;
+        width: 100vw;
+        background-image:linear-gradient(#cc2b5e,#753a88);
+    }
+    .loader{
+        margin-top:-200px;
+        
+    }
+    .main-cont{
+        position: relative;
+        margin-top: -750px;
+        margin-left: -20px;
+        width: 90%;
+        
+        
+    }
+    .h{
+        padding: 10px;
+        border-width: 3px;
+        border-color: lawngreen;
+    }
+    .h h1{
+        font-size: 30px;
+        
+    }
+    .cont{
+        position: absolute;
+        border: 3px outset blue;
+        font-size: 10px;
+        top: 90px;
+        padding: 5px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,0.1);
+        
+    }
+    .hose{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        padding:10px;
+    }
+    .hose h2{
+        letter-spacing:1px;
+        font-size: 14px;
+        
+    }
+    #hl{
+        position: absolute;
+       font-size:12px;
+       left: 19%;
+   }
+   #ht{
+       position: absolute;
+      font-size:12px;
+      left: 19%;
+   }
+   .hose #hl{
+    left: 17%;
+    top: 75px;
+   }
+   .hose #ht{
+    left: 19%;
+    top: 35px;
+   }
+   .hose .hoses{
+    position: absolute;
+    left: 29%;
+    top: 70px;
+    font-size:12px;
+    
+}
+.hose,.len,.fit1,.fit2,.slev{
+    padding-left: 0px;
+}
+.hose .hoses,.hose .hosestype,.len .length,.fit1 .fit1type,.fit1 .fitting1,.fit2 .fitting2,.fit2 .fit2type,.slev .sleeve,.slev .slevtype{
+    background-color: rgba(0,0,0,0.3);
+    font-family: 'Poppins', sans-serif;
+}
+.hose h2, .len h2,.fit1 h2, .fit2 h2 , .slev h2{
+    color:rgb(0, 255, 234);
+    word-spacing: 1px;
+}
+.len h2{
+    letter-spacing: 1px;
+    
+}
+.hose .hosestype{
+    position: absolute;
+    left: 29%;
+    top:30px
+
+}
+.fit1,.fit2,.slev{
+    height: 80px;
+    
+}
+.fit1 h2, .fit2 h2{
+     width: 80px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.fit1 .fitting1{
+    position: absolute;
+    left: 29%;
+    top: 250px;
+}
+.fit1type{
+    position: absolute;
+    left: 29%;
+    top: 210px;
+    
+}
+.fit1 #hl{
+    left: 19%;
+    top: 255px;
+   }
+   .fit1 #ht{
+    left: 20%;
+    top: 215px;
+   }
+   .fit1 .fitting1{
+    position: absolute;
+    left: 29%;
+    top: 250px;
+}
+.fit2 .fit2type{
+    position: absolute;
+    left: 29%;
+    top: 320px;
+    
+}
+.fit2 #hl{
+    left: 19%;
+    top: 365px;
+   }
+   .fit2 #ht{
+    left: 20%;
+    top: 325px;
+   }
+   .fit2 .fitting2{
+    position: absolute;
+    left: 29%;
+    top: 360px;
+}
+.slev #hl{
+    left: 19%;
+    top: 470px;
+   }
+   .slev #ht{
+    left: 20%;
+    top: 435px;
+   }
+.slev .sleeve{
+    position: absolute;
+    left: 29%;
+    top: 465px;
+   
+}
+.slev .slevtype{
+    position: absolute;
+    left: 29%;
+    top: 430px;
+}
+.display{
+    position: relative;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+.c0,.c1,.c2,.c3{
+    position: absolute;
+    font-size: 13px;
+    right: 37%;
+    height: 20px;
+}
+.c0, .tot{
+    position: absolute;
+    top: 0%;
+}
+.c1, .sgst{
+    position: absolute;
+    top: 25%;
+}
+.c2, .cgst{
+    position: absolute;
+    top: 50%;
+}
+.c3, .gtot{
+    position: absolute;
+    top: 75%;
+}
+.tot, .sgst, .cgst, .gtot{
+    font-size: 15px;
+    height: 20px;
+    width: 140px;
+    right: 10px;
+    padding-left: 10px;
+}
+.gtot{
+    font-size: 15px;
+    height: 23px;
+    
+}
+.c3{
+    height: 23px;
+    width: 130px;
+    text-align: right;
+    padding: 1px;
+    font-size: 15px;
+}
+.bt{
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    left: 10px;
+    top: 60%;
+}
+.bt .go{
+    width: 65px;
+    height: 33px;
+    font-size: 12px;
+}
+}

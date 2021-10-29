@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <link rel="shortcut icon" type="image/png" href="rate.png">
+    <title>JOB RATE CALCULATOR</title>
+</head>
+<body>
+    <div class="loader">
+        <img src="Loader.gif" alt="Loading...">
+        <h1><span></span></h1>
+    </div>
+    <div class="main-cont">
+        <div class="h">
+         <h1>RATE CALCULATOR</h1>
+        </div>
+    <div class="cont">
+       <form>
+           <div class="hose">
+            <h2>HOSES:</h2>
+            <label id="hl">Sizes:</label>
+            <select class="hoses" name="hosname">
+                <option></option>
+            </select>
+            <label id="ht">Type:</label>
+            <select class="hosestype" name="htype">
+             <option id="hotp"></option>
+            </select>
+           </div>
+           <div class="len">
+               <h2> LENGTH:</h2>
+               <input type="number" name="lengthtext" class="length" step="any" placeholder="0.00" required>
+           </div>
+           <div class="fit1">
+            <h2> FITTING 1 END:</h2>
+            <label id="hl">Sizes:</label>
+            <select class="fitting1" name="f1">
+                <option></option>
+            </select>
+            <label id="ht">Type:</label>
+            <select class="fit1type" name="f1type">
+             <option></option>
+            </select>
+           </div>
+           <div class="fit2">
+            <h2> FITTING 2 END:</h2>
+            <label id="hl">Sizes:</label>
+            <select class="fitting2" name="f2" >
+                <option></option>
+            </select>
+            <label id="ht">Type:</label>
+            <select class="fit2type" name="f2type"> 
+             <option></option>
+            </select>
+           </div>
+           <div class="slev">
+            <h2>SLEEVE:</h2>
+            <label id="hl">Sizes:</label>
+            <select class="sleeve" name="sl" >
+                <option></option>
+            </select>
+            <label id="ht">Type:</label>
+            <select class="slevtype" name="stype" >
+             <option></option>
+            </select>
+           </div><br>
+           <div class="display"> 
+            <span class="c0">Total =  </span><span class="tot"> </span> <br>
+            <span class="c1">SGST 9% =  </span><span class="sgst"> </span> <br>
+            <span class="c2">CGST 9% =  </span><span class="cgst"> </span> <br>
+            <span class="c3">GRAND Total =  </span><span class="gtot"> </span>
+            <div class="bt">
+                <button type="button" class="go">GO</button>
+            </div>
+
+           </div>
+           <!-- <div class="bt">
+               <button type="button" class="go">GO</button>
+           </div> -->
+
+       </form>
+    </div>
+</div>
+<!-- </div> -->
+<script type="text/javascript" src="jscript.js"></script>
+</body>
+</html>
