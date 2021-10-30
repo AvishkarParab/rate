@@ -10,21 +10,22 @@
 } */
 
 body{
-    /* width: 10vw; */
-    /* height: 100vh; */
+    width: 95vw;
+    height: auto;
     background: rgba(0,0,0,0.3) url("./fiting.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-position:inherit;
+	background-position:center;
     display: grid;
     place-items: center;
     
 }
 .loader{
     position: fixed;
-    margin-top:590px;
+    margin-top:-70px;
     width: 100vw;
-    height: 100vh;
+    height: 102vh;
+    margin-left: 30px;
     background: white;
     display: grid;
     place-items: center;
@@ -71,9 +72,9 @@ body{
 .main-cont{
     position: relative;
 	margin-top: 10px;
-    
 	color: white;
     width: 75%;
+    height: 110vh;
     min-width: 420px;
     display: grid;
     place-items: center;
@@ -489,6 +490,7 @@ option{
     from{transform: rotateY(0deg);}
     to{transform: rotateY(360deg);}
 }
+
 @media only screen and (max-width:500px) {
     *{
         margin: 0;
@@ -496,7 +498,6 @@ option{
     }
     body{
         height:130vh;
-        width: 100vw;
         background-image:linear-gradient(#cc2b5e,#753a88);
     }
     .loader{
@@ -505,9 +506,9 @@ option{
     }
     .main-cont{
         position: relative;
-        margin-top: -750px;
-        margin-left: -20px;
-        width: 90%;
+        margin-top: -120px;
+        margin-left:1px;
+        width: 93%;
         
         
     }
